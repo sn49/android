@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity6"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextClock
+        android:id="@+id/textclock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="ss:hh:mm"
+        android:format24Hour="a hh:mm:ss"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
+        />
+
+
+
+    <Button
+        android:id="@+id/btngettime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get time"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Click time"
+        android:textSize="40sp"/>
+
+
+</LinearLayout>
