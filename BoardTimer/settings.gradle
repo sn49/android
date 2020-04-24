@@ -1,0 +1,2 @@
+include ':app', ':example6-3'
+rootProject.name='BoardTimer'
