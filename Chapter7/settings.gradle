@@ -1,0 +1,2 @@
+include ':app', ':example01', ':example02', ':parctice71', ':exercise03', ':myapplication'
+rootProject.name='Chapter7'
