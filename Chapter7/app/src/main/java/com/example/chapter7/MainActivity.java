@@ -8,30 +8,28 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-import java.util.zip.Inflater;
-
 public class MainActivity extends AppCompatActivity {
 
-    Button btnLayoutinflatorButton;
+    // 참조변수 선언
+    Button btnLayoutInflater;
     LinearLayout linearLayout;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        linearLayout=findViewById(R.id.linearlayout);
-        btnLayoutinflatorButton = findViewById(R.id.inflator);
+        // 참조변수에 객체 주소 할당
+        btnLayoutInflater = findViewById(R.id.btnLayoutInflater);
+        linearLayout = findViewById(R.id.mainLinearLayout);
 
-        btnLayoutinflatorButton.setOnClickListener(new View.OnClickListener(){
+        btnLayoutInflater.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                LayoutInflater layoutInflater = getLayoutInflater();
-                View sampleLayoutView = layoutInflater.inflate(R.layout.samplelayout,null);
+            public void onClick(View v) {
+                LayoutInflater layoutInflater = getLayoutInflater();    // xml 코드를 view 객체로 만들어준다.
+                View sampleLayoutView = layoutInflater.inflate(R.layout.sample_layout, null);
                 linearLayout.addView(sampleLayoutView);
             }
         });
-
     }
 }
