@@ -1,0 +1,2 @@
+include ':app', ':example6-3', ':exampe612', ':myapplication6-13', ':example613_sv2', ':practice615', ':fragment01', ':fragment02'
+rootProject.name='BoardTimer'

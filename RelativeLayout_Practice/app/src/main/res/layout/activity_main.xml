@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="329dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1003dp"
+                android:layout_weight="10"
+
+                ><![CDATA[
+
+                >
+
+
+
+                ]]>
+
+                <TextView
+                    android:id="@+id/Textv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
+                    android:hint="000-0000-0000"
+                    android:text="전화번호"
+
+                    ></TextView>
+
+                <EditText
+                    android:layout_width="500dp"
+                    android:layout_height="50dp"
+                    android:layout_alignBaseline="@+id/Textv"
+                    android:layout_toRightOf="@+id/Textv"></EditText>
+
+                <Button
+                    android:id="@+id/baseBtn1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignBaseline="@id/baseBtn2"
+                    android:layout_alignParentRight="true"
+                    android:layout_toLeftOf="@+id/baseBtn2"
+                    android:text="입력" />
+
+                <Button
+                    android:id="@+id/baseBtn2"
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/Textv"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:text="취소" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
