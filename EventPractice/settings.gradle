@@ -1,2 +1,0 @@
-include ':app', ':interfacepractice'
-rootProject.name='EventPractice'
